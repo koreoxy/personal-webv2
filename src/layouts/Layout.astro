@@ -5,7 +5,8 @@ interface Props {
 	image?: string;
 }
 	
-const { title, description="default description", image="default image" } = Astro.props; 
+const { title, description="default description", image="default image" } = Astro.props;
+
 ---
 
 <!doctype html>
@@ -18,9 +19,12 @@ const { title, description="default description", image="default image" } = Astr
 		<meta name="description" content={description} />
 		<meta property="og:image" content={image} />
 		<title>{title}</title>
+
+	
 	</head>
 	<!-- <body class="min-h-screen max-w-3xl mx-auto bg-[url('/rain.gif')] bg-no-repeat bg-cover bg-fixed font-sans"> -->
 	<body class="min-h-screen max-w-3xl mx-auto bg-gradient-to-br from-blue-800 bg-black text-white">
 		<slot />
+		
 	</body>
 </html>
