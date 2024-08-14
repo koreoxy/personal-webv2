@@ -10,10 +10,10 @@ export default function Home() {
       <Navbar />
       <div className="px-5 md:px-5 md:max-w-7xl md:mx-auto">
         <HeroSection />
-        <div className="block sm:hidden">
+        <div className="block sm:hidden" id="project-section">
           <ProjectSection />
         </div>
-        <div className="hidden sm:block">
+        <div className="hidden sm:block" id="project-section">
           <ProjectSection2 />
         </div>
       </div>

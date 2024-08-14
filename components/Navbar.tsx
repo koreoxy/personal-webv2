@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const Navbar = () => {
   return (
@@ -15,9 +16,12 @@ const Navbar = () => {
             />
           </div>
           <ul className="text-light flex gap-5">
-            <li>Home</li>
-            <li>Project</li>
-            <li>Blog</li>
+            <Link href="/">
+              <li>Home</li>
+            </Link>
+            <Link href="#project-section">
+              <li>Project</li>
+            </Link>
           </ul>
         </div>
       </div>

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { AiOutlineYoutube } from "react-icons/ai";
 import { BsInstagram } from "react-icons/bs";
 import { FaGithub } from "react-icons/fa";
@@ -23,7 +24,7 @@ const HeroSection = () => {
         <div className="font-bold text-[28px] md:hidden">
           <p>
             Hello I&apos;m{" "}
-            <b className="bg-light border border-black p-1 transform rotate-0 -skew-x-3 shadow-[10px_10px_black] mr-2">
+            <b className="bg-light border border-black p-1 transform rotate-0 -skew-x-3 shadow-[5px_5px_black] mr-2">
               Saifull
             </b>{" "}
             Fullstack Web Developer From Indonesia
@@ -45,10 +46,19 @@ const HeroSection = () => {
           <div className="bg-light border border-black p-5 transform rotate-0 -skew-x-3 shadow-[10px_10px_black]">
             <div className="w-full md:h-full">
               <div className="flex flex-row lg:flex-col gap-5 items-center text-center justify-center lg:mx-0 my-[-10px] lg:my-6">
-                <BsInstagram size={30} />
-                <AiOutlineYoutube size={30} />
-                <FaGithub size={30} />
-                <FaXTwitter size={30} />
+                <Link href="https://www.instagram.com/ifulufi/" target="_blank">
+                  <BsInstagram size={30} />
+                </Link>
+                <Link href="https://www.youtube.com/@1sh1sh/" target="_blank">
+                  <AiOutlineYoutube size={30} />
+                </Link>
+                <Link href="https://github.com/koreoxy" target="_blank">
+                  <FaGithub size={30} />
+                </Link>
+
+                <Link href="https://x.com/koreoxy" target="_blank">
+                  <FaXTwitter size={30} />
+                </Link>
               </div>
             </div>
           </div>
